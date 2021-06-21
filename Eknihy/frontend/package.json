@@ -1,0 +1,70 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "@tinymce/tinymce-react": "^3.12.3",
+    "@types/ckeditor__ckeditor5-core": "^27.0.17",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.4.1",
+    "ckeditor": "^4.12.1",
+    "draft-js": "^0.11.7",
+    "react": "^17.0.2",
+    "react-bootstrap-icons": "^1.4.0",
+    "react-ckeditor-component": "^1.1.0",
+    "react-dom": "^17.0.2",
+    "react-paypal-button-v2": "^2.6.3",
+    "react-reader": "^0.20.3",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-rte": "0.14.2",
+    "react-scripts": "^2.1.8",
+    "react-select": "^4.3.1",
+    "react-select-search": "^3.0.6",
+    "react-timeout": "^2.0.1",
+    "reactstrap": "^8.9.0",
+    "smartblock": "^1.0.8",
+    "web-vitals": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/ckeditor": "^4.9.10",
+    "@types/draft-js": "^0.11.1",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/react-rte": "^0.16.1",
+    "@types/react-select": "^4.0.15",
+    "@types/react-timeout": "^1.1.1"
+  }
+}

@@ -1,0 +1,195 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+    <SpaRoot>frontend\</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+    <UserSecretsId>c3739d3e-de47-4b6c-9a3f-14ce1395686c</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Content Remove="$(SpaRoot)**" />
+    <None Remove="$(SpaRoot)**" />
+    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="frontend\src\components\Administrationpage\Navigation.tsx" />
+    <None Remove="frontend\src\components\Administrationpage\Shared\BookInterFace.ts" />
+    <None Remove="frontend\src\components\AdministrationProductPage\ProductsTable.tsx" />
+    <None Remove="frontend\src\components\BooksPage\Book.tsx" />
+    <None Remove="frontend\src\components\BooksPage\checkUrl.ts" />
+    <None Remove="frontend\src\components\BooksPage\SortingBookPage.tsx" />
+    <None Remove="frontend\src\components\Cartpage\CartPageProduct.tsx" />
+    <None Remove="frontend\src\components\Cartpage\CartTable.tsx" />
+    <None Remove="frontend\src\components\CheckoutOrder\CheckoutProduct.tsx" />
+    <None Remove="frontend\src\components\CheckoutOrder\CheckoutTable.tsx" />
+    <None Remove="frontend\src\components\Dropdown.tsx" />
+    <None Remove="frontend\src\components\Homepage\About.tsx" />
+    <None Remove="frontend\src\components\Homepage\BestSeller.tsx" />
+    <None Remove="frontend\src\components\Homepage\Carousel.tsx" />
+    <None Remove="frontend\src\components\Homepage\News.tsx" />
+    <None Remove="frontend\src\components\Hooks\useLocalStorage.tsx" />
+    <None Remove="frontend\src\components\Hooks\useMobile.tsx" />
+    <None Remove="frontend\src\components\Shared\CheckAdminLogin.tsx" />
+    <None Remove="frontend\src\components\Shared\CheckLogin.tsx" />
+    <None Remove="frontend\src\components\Storepage\Categories.tsx" />
+    <None Remove="frontend\src\components\Storepage\sorting.tsx" />
+    <None Remove="frontend\src\Pages\Administration\AdministrationHomePage\AdministrationHomePage.tsx" />
+    <None Remove="frontend\src\Pages\Administration\AuthorsPages\AdministrationPageAuthors\AdministrationPageAuthors.tsx" />
+    <None Remove="frontend\src\Pages\Administration\AuthorsPages\AdministrationPageEditAuthor\AdministrationPageEditAuthor.tsx" />
+    <None Remove="frontend\src\Pages\Administration\CategoriesPages\AdministrationPageCategories\AdministrationPageCategories.tsx" />
+    <None Remove="frontend\src\Pages\Administration\CategoriesPages\AdministrationPageEditCategory\AdministrationPageEditCategory.tsx" />
+    <None Remove="frontend\src\Pages\Administration\OrdersPages\AdministrationPageOrders\AdministrationPageOrders.tsx" />
+    <None Remove="frontend\src\Pages\Administration\ProductsPages\AdministrationPageEditProduct\AdministrationPageEditProduct.tsx" />
+    <None Remove="frontend\src\Pages\Administration\ProductsPages\AdministrationPageProducts\AdministrationPageProducts.tsx" />
+    <None Remove="frontend\src\Pages\Administration\PublishingHousesPages\AdministrationPageEditPublishingHouse\AdministrationPageEditPublishingHouse.tsx" />
+    <None Remove="frontend\src\Pages\Administration\CategoriesPages\AdministrationPageNewCategory\AdministrationPageNewCategory.tsx" />
+    <None Remove="frontend\src\Pages\Administration\ProductsPages\AdministrationPageNewProduct\AdministrationPageNewProduct.tsx" />
+    <None Remove="frontend\src\Pages\Administration\PublishingHousesPages\AdministrationPageNewPublishingHouse\AdministrationPageNewPublishingHouse.tsx" />
+    <None Remove="frontend\src\Pages\Administration\PublishingHousesPages\AdministrationPagePublishingHouses\AdministrationPagePublishingHouses.tsx" />
+    <None Remove="frontend\src\Pages\Administration\UsersPages\AdministrationPageEditUser\AdministrationPageEditUser.tsx" />
+    <None Remove="frontend\src\Pages\Administration\UsersPages\AdministrationPageNewUser\AdministrationPageNewUser.tsx" />
+    <None Remove="frontend\src\Pages\Administration\UsersPages\AdministrationPageUsers\AdministrationPageUsers.tsx" />
+    <None Remove="frontend\src\Pages\ApplicationPages\AndroidApplicationPage\AndroidApplicationPage.tsx" />
+    <None Remove="frontend\src\Pages\ApplicationPages\ApplicationPage.tsx" />
+    <None Remove="frontend\src\Pages\ApplicationPages\iOSApplicationPage\iOSApplicationPage.tsx" />
+    <None Remove="frontend\src\Pages\ApplicationPages\PcApplicationPage\PcApplicationPage.tsx" />
+    <None Remove="frontend\src\Pages\ApplicationPages\SelectDevicePage\SelectDevicePage.tsx" />
+    <None Remove="frontend\src\Pages\BooksPage\BooksPage.tsx" />
+    <None Remove="frontend\src\Pages\Cartpage.tsx" />
+    <None Remove="frontend\src\Pages\CheckoutOrder\CheckoutPage.tsx" />
+    <None Remove="frontend\src\Pages\ContactPage\ContactPage.tsx" />
+    <None Remove="frontend\src\Pages\LoginPage\LoginPage.tsx" />
+    <None Remove="frontend\src\Pages\OrdersPage\OrdersPage.tsx" />
+    <None Remove="frontend\src\Pages\ProductPage\ProductPage.tsx" />
+    <None Remove="frontend\src\Pages\ReaderPage\ReaderPage.tsx" />
+    <None Remove="frontend\src\Pages\RegisterPage\RegisterPage.tsx" />
+    <None Remove="frontend\src\Pages\RegistrationConfirmPage\RegistrationConfirmPage.tsx" />
+    <None Remove="frontend\src\Pages\ResendPasswordPage\ResendPasswordPage.tsx" />
+    <None Remove="frontend\src\Pages\SettingsPage\SettingsPage.tsx" />
+    <None Remove="frontend\src\Pages\Storepage.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="frontend\src\components\Administrationpage\Shared\BookInterFace.ts" />
+    <TypeScriptCompile Include="frontend\src\components\Administrationpage\Shared\Navigation.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\AdministrationProductPage\ProductsTable.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Shared\AddedToCartLog.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\BooksPage\Book.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Functions\shared\checkUrl.ts" />
+    <TypeScriptCompile Include="frontend\src\components\BooksPage\SortingBookPage.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Shared\BottomHeader.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Shared\Cart.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Cartpage\CartPageProduct.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Cartpage\CartTable.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Shared\CartProduct.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\CheckoutOrder\CheckoutProduct.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\CheckoutOrder\CheckoutTable.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Homepage\About.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Homepage\Carousel.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Homepage\BestSeller.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="frontend\src\components\Homepage\News.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Hooks\useLocalStorage.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Hooks\useMobile.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Shared\CheckAdminLogin.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Shared\CheckLogin.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Shared\Layout.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Shared\NavMenu.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Shared\PreviewProduct.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Shared\Search.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Storepage\Categories.tsx" />
+    <TypeScriptCompile Include="frontend\src\components\Storepage\Sorting.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\AdministrationHomePage\AdministrationHomePage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\AuthorsPages\AdministrationPageAuthors\AdministrationPageAuthors.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\AuthorsPages\AdministrationPageEditAuthor\AdministrationPageEditAuthor.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\CategoriesPages\AdministrationPageCategories\AdministrationPageCategories.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\CategoriesPages\AdministrationPageEditCategory\AdministrationPageEditCategory.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\OrdersPages\AdministrationPageOrders\AdministrationPageOrders.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\ProductsPages\AdministrationPageEditProduct\AdministrationPageEditProduct.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\ProductsPages\AdministrationPageProducts\AdministrationPageProducts.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\PublishingHousesPages\AdministrationPageEditPublishingHouse\AdministrationPageEditPublishingHouse.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\AuthorsPages\AdministrationPageNewAuthor\AdministrationPageNewAuthor.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\CategoriesPages\AdministrationPageNewCategory\AdministrationPageNewCategory.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\ProductsPages\AdministrationPageNewProduct\AdministrationPageNewProduct.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\PublishingHousesPages\AdministrationPageNewPublishingHouse\AdministrationPageNewPublishingHouse.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\PublishingHousesPages\AdministrationPagePublishingHouses\AdministrationPagePublishingHouses.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\UsersPages\AdministrationPageEditUser\AdministrationPageEditUser.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\UsersPages\AdministrationPageNewUser\AdministrationPageNewUser.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\Administration\UsersPages\AdministrationPageUsers\AdministrationPageUsers.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\ApplicationPages\AndroidApplicationPage\AndroidApplicationPage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\ApplicationPages\iOSApplicationPage\iOSApplicationPage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\ApplicationPages\PcApplicationPage\PcApplicationPage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\ApplicationPages\SelectDevicePage\SelectDevicePage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\BooksPage\BooksPage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\CartPage\Cartpage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\CheckoutOrder\CheckoutPage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\ContactPage\ContactPage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\LoginPage\LoginPage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\OrdersPage\OrdersPage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\ProductPage\ProductPage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\ReaderPage\ReaderPage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\RegisterPage\RegisterPage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\RegistrationConfirmPage\RegistrationConfirmPage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\ResendPasswordPage\ResendPasswordPage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\SettingsPage\SettingsPage.tsx" />
+    <TypeScriptCompile Include="frontend\src\Pages\StorePage\Storepage.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="frontend\build\Images\Products\" />
+    <Folder Include="frontend\public\Images\Products\" />
+    <Folder Include="frontend\src\components\Applicationpage\" />
+    <Folder Include="frontend\src\components\Contactpage\" />
+    <Folder Include="frontend\src\components\Accountpage\" />
+    <Folder Include="frontend\src\components\AdministrationpageCategories\" />
+    <Folder Include="frontend\src\components\RegistrationPage\" />
+    <Folder Include="frontend\src\components\LoginPage\" />
+    <Folder Include="frontend\src\components\Productpage\" />
+    <Folder Include="frontend\src\Pages\Administration\OrdersPages\AdministrationPageNewOrder\" />
+    <Folder Include="frontend\src\Pages\Administration\OrdersPages\AdministrationPageEditOrder\" />
+  </ItemGroup>
+
+  <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+  </Target>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build" />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="$(SpaRoot)build\**" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>
